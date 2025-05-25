@@ -43,5 +43,18 @@ public class StaticArrayTest {
         }
         return k;
     }
+//    https://leetcode.com/problems/remove-element/description/
+    public int removeElement(int[] nums, int val) {
+        int k = nums.length;
+        for(int i = 0 ; i <= k ; i++) {
+            if (nums[i] == val) {
+                int temp = nums[k-1];
+                nums[k-1] = nums[i];
+                nums[i] = temp;
+                k--;
+            }
+        }
+        return k;
+    }
 
 }

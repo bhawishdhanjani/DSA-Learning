@@ -11,7 +11,9 @@ public class Main {
 //        staticArrayTest.removeMiddle(arr,0,3);
 //        staticArrayTest.insertEnd(arr,4,2);
 //        staticArrayTest.removeEnd(arr,3);
-        System.out.println(staticArrayTest.removeDuplicates(arr));
+//        System.out.println(staticArrayTest.removeDuplicates(arr));
+        System.out.println(staticArrayTest.removeElement(arr, 1));
         System.out.println(Arrays.toString(arr));
+
     }
 }
