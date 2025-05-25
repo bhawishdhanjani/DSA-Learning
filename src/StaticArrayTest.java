@@ -25,8 +25,23 @@ public class StaticArrayTest {
         for(int i = index ; i < noOfValuePresent-1 ; i++){
             arrray[i] = arrray[i+1];
         }
-        arrray[noOfValuePresent-1] = 0;
+//        arrray[noOfValuePresent-1] = 0;
 
+    }
+//    Leet Code Problem Solution
+//    https://leetcode.com/problems/remove-duplicates-from-sorted-array
+
+    public int removeDuplicates(int[] nums) {
+        int length = nums.length;
+        if(length == 0 ) return 0;
+        int k = 1;
+        for(int i = 1; i<length ; i++){
+            if(nums[i]!=nums[i-1]) {
+                nums[k] = nums[i];
+                k++;
+            }
+        }
+        return k;
     }
 
 }
